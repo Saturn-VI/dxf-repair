@@ -9,7 +9,7 @@ Notes:
 - needs DXF version 2000
 """)
 doc = ezdxf.readfile(input("filename of input dxf"))
-outfilename = (in := input("filename of output dxf")).endswith(".dxf") ? in : in + ".dxf"
+outfilename = (inp := input("filename of output dxf")).endswith(".dxf") ? inp : inp + ".dxf"
 modelspace = doc.modelspace()
 to_delete = []
 
