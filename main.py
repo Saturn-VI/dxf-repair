@@ -8,8 +8,8 @@ print("""
 Notes:
 - needs DXF version 2000
 """)
-doc = ezdxf.readfile(input("filename of input dxf"))
-outfilename = input("filename of output dxf")
+doc = ezdxf.readfile(input("filename of input dxf: "))
+outfilename = input("filename of output dxf: ")
 modelspace = doc.modelspace()
 to_delete = []
 
